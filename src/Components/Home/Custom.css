@@ -1,0 +1,28 @@
+
+.slick-dots li button:before{
+    font-size: 23px !important;
+}
+@media all and (max-width:769px){
+    .icon-one-hero{
+        left: -4% !important;
+        width: 70% !important;
+        top: 62% !important;
+    }
+    .icon-two-hero{
+        left: 45% !important;
+        width: 45% !important;
+        top: 35% !important;
+    }
+    .position-issue-ha{
+        right: -1rem !important;
+    }
+    /* .contact-issue{
+    justify-content: center !important;
+} */
+}
+@media all and (max-width:1070px){
+.contact-issue{
+   flex-direction: column;
+}
+
+}

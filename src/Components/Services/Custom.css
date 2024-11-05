@@ -1,0 +1,17 @@
+
+.slick-dots li button:before{
+    font-size: 23px !important;
+    margin-top: 20px !important;
+}
+@media all and (max-width:768px){
+    .icon-one-hero{
+        left: -4% !important;
+    }
+    .icon-two-hero{
+        left: 45% !important;
+        width: 45% !important;
+    }
+    .position-issue-ha{
+        right: -1rem !important;
+    }
+}
