@@ -21,6 +21,10 @@ export default function Contactus() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFormData({
+      firstName: "",
+      email: "",
+    });
     console.log(formData);
     
     
