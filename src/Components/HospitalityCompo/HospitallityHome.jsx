@@ -7,7 +7,7 @@ import img2 from "../../../public/service-1.png";
 
 export default function HospitallityHome() {
   return (
-    <div className="bg-[#49BEBA33] mb-12 ">
+    <div className="bg-[#49BEBA33] mb-12  lg:mt-24 md::mt-24 mt-12 ">
       <div className="Mycontainer flex flex-wrap items-center justify-between py-12 ">
         <div>
           <h1 className=" leading-snug font-semibold	 lg:text-5xl text-3xl max-w-md text-[#0069AB]">

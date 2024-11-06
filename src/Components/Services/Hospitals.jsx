@@ -6,7 +6,7 @@ import Image from "next/image";
 const services = [
   {
     id: 1,
-    name: "Quironsalud Hospital Group",
+    name: "Quironsalud Hospital ",
     location: "Madrid, Spain",
     img: hospital,
     link: "/hospital",
@@ -51,8 +51,10 @@ export default function Hospitals({activeTab}) {
                 className="w-full  object-cover rounded-md "
               />
               <div className="px-4 py-4">
-                <h2 className="text-lg font-semibold">{service.name}</h2>
-                <p className="text-gray-600">{service.location}</p>
+                <h2 className="text-lg font-bold text-[#4CB6B6]">
+                  {service.name}
+                </h2>
+                <p className="text-[#000000] font-sans p-2">{service.location}</p>
               </div>
             </Link>
           ))}

@@ -38,7 +38,7 @@ export default function ExploreCard() {
             return (
               <div
                 key={ind}
-                className="flex px-0 py-3  lg:px-3 lg:py-3 md:px-3 md:py-3 w-full "
+                className="flex px-0 py-3 transition hover:scale-105		  lg:px-3 lg:py-3 md:px-3 md:py-3 w-full "
               >
                 <div className=" rounded-xl overflow-hidden shadow-lg px-4 py-4 border">
                   <Image

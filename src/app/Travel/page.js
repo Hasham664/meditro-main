@@ -12,7 +12,12 @@ import HealNets from "@/Components/Home/HealNets";
 export default function page() {
   return (
     <div>
-      <Navbar />
+      <div className="bg-[#F6FBFF] pb-12 lg:pb-36">
+        <Navbar />
+        <h1 className="text-center font-bold pt-6 lg:pt-24 md:pt-12 text-2xl lg:text-5xl text-[#4CB6B6]">
+          Travel
+        </h1>
+      </div>
       <HospitallityHome />
       <Form />
       <OurSpecialties />

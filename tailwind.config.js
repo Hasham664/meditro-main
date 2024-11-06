@@ -16,6 +16,9 @@ module.exports = {
       screens: {
         tablet: "840px",
       },
+      fontFamily: {
+        sans: ["Work Sans"], 
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ export default function TopDoctors({ activeTab }) {
   return (
     <>
       {activeTab === "Top Doctors" && (
-        <div className="mt-12 lg:mt-24 md:mt-24">
+        <div className="mt-12 ">
           <TeamSlider />
         </div>
       )}

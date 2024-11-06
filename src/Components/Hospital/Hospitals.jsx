@@ -90,9 +90,9 @@ export default function HospitalList() {
  
 
   return (
-    <div className="Mycontainer">
-      <h1 className="text-3xl font-semibold text-gray-800 mb-4 mt-12">
-        Find Your <span className="text-green-500">Meditro</span>
+    <div className="Mycontainer ">
+      <h1 className="text-3xl font-semibold text-gray-800 mb-4  lg:mt-24 md::mt-24 mt-12">
+        Find Your <span className="text-[#4CB6B6] font-bold">Meditro</span>
       </h1>
 
       <div className="flex flex-col md:flex-row gap-4 mb-6 mt-12">
@@ -130,13 +130,15 @@ export default function HospitalList() {
             className="border rounded-lg  hover:shadow-lg transition"
           >
             <Image
-              src={hospital.img} 
+              src={hospital.img}
               alt={hospital.name}
               className="w-full  object-cover rounded-md "
             />
             <div className="px-4 py-4">
-              <h2 className="text-lg font-semibold">{hospital.name}</h2>
-              <p className="text-gray-600">{hospital.location}</p>
+              <h2 className="text-lg font-bold text-[#4CB6B6]">
+                {hospital.name}
+              </h2>
+              <p className="font-sans py-1 pt-2">{hospital.location}</p>
             </div>
           </Link>
         ))}

@@ -31,10 +31,18 @@ export default function StatsCards() {
               {
                   stats.map((stat, ind) => {
                       return (
-                        <div key={ind} className="w-full  mt-6">
+                        <div
+                          key={ind}
+                          className="w-full  transition hover:scale-105  mt-6"
+                        >
                           <div className=" min-h-[203px] text-center items-center  py-12 shadow-sm rounded-md bg-slate-100">
-                                  <Image className='m-auto' src={stat.icon } alt='blue' width={40}/>
-                                  <p className=' text-lg pt-4'>{stat.text }</p>
+                            <Image
+                              className="m-auto"
+                              src={stat.icon}
+                              alt="blue"
+                              width={40}
+                            />
+                            <p className=" text-lg pt-4">{stat.text}</p>
                           </div>
                         </div>
                       );

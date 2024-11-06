@@ -59,10 +59,10 @@ export default function DentistryServices({ activeTab }) {
                 />
               </div>
               <div key={service.title} className="card">
-                <h3 className="text-[#4CB6B6] text-center text-2xl lg:text-4xl m-auto max-w-48	pt-6">
+                <h3 className="text-[#4CB6B6] font-bold	 text-center text-2xl  m-auto max-w-48	pt-6">
                   {service.title}
                 </h3>
-                <p className="text-[#000000] px-6 text-lg m-auto pt-6 max-w-[360px]	">
+                <p className="text-[#000000] font-sans font-normal	 px-4 text-center text-base	 m-auto pt-4 max-w-[344px]	">
                   {service.para}
                 </p>
 

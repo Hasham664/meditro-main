@@ -13,9 +13,9 @@ const Footer = () => {
       <div className="Mycontainer ">
         <div className="flex flex-wrap justify-between items-start">
           {/* Logo and Description */}
-          <div className="w-full md:w-1/4 mb-6 md:mb-0 text-center md:text-left">
-            <Image src={logo} alt="Logo" width={150} />
-            <p className="text-gray-600 mt-4 max-w-64	">
+          <div className="w-full md:w-1/4 mb-6 md:mb-0 text-left md:text-left">
+            <Image src={logo} className="w-[35%]" alt="Logo" />
+            <p className="text-gray-600 mt-4 lg:mt-10 md:mt-10 max-w-64	">
               Experience personalized medical care from the comfort of your
               home.
             </p>

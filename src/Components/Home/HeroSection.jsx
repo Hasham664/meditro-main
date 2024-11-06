@@ -25,12 +25,20 @@ const HeroSection = () => {
             Your <span className="text-teal-500">Trusted Partner</span> In
             Digital Healthcare.
           </h1>
-          <p className="max-w-lg pt-4 pb-4 text-gray-600">
-            Empowering Your Health at Every Step. Experience personalized
-            medical care from the comfort of your home. Connect with certified
-            doctors, or manage prescriptions, and schedule appointments with
-            ease. Ready to take control of your health? Get Started or Book an
-            Appointment today.
+          <p className="max-w-lg pt-4 pb-4 text-gray-600 font-medium	">
+            <span className="text-[#01B2A8] font-bold">
+              {" "}
+              Empowering Your Health at Every Step.
+            </span>{" "}
+            Experience personalized medical care from the comfort of your home.
+            Connect with{" "}
+            <span className="text-[#01B2A8] font-bold">
+              certified doctors,
+            </span>{" "}
+            or manage prescriptions, and schedule appointments with ease. Ready
+            to take control of your health?{" "}
+            <span className="text-[#01B2A8] font-bold"> Get Started </span> or
+            Book an Appointment today.
           </p>
           <button className="z-10 relative mt-12 flex items-center gap-1 text-xl lg:text-2xl md:text-2xl  cursor-pointer px-6 py-3 bg-gradient-to-r from-custom-blue to-custom-teal text-white rounded-md ">
             Book an appointment

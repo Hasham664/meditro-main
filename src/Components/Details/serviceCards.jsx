@@ -33,7 +33,10 @@ export default function serviceCards() {
     <div className="grid grid-1 pb-10 pt-12  lg:grid-cols-4 md:grid-cols-3 gap-3 lg:gap-6 Mycontainer">
       {cards.map((card, ind) => {
         return (
-          <div key={ind} className="bg-white shadow-2xl rounded-xl px-8 py-12">
+          <div
+            key={ind}
+            className="  transition hover:scale-105 bg-white shadow-2xl rounded-xl px-8 py-12"
+          >
             <h1 className="text-3xl lg:text-5xl  text-[#4CB6B6] font-bold">
               {card.number}
             </h1>

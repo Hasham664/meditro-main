@@ -82,7 +82,7 @@ const DropdownMenu = () => {
             <p className="lg:text-4xl md:text-3xl text-xl">
               visa consultation service provided by Meditro
             </p>
-            <button className="bg-black text-white py-3 lg:py-4 md:py-4 px-4 rounded-lg lg:text-2xl md:text-2xl text-xl ">
+            <button className="bg-black text-white py-3 lg:py-4 md:py-4 px-4 rounded-lg lg:text-2xl md:text-2xl text-lg ">
               Contact Us
             </button>
           </div>

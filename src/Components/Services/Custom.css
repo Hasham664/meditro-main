@@ -3,6 +3,21 @@
     font-size: 23px !important;
     margin-top: 20px !important;
 }
+/* Default color for dots */
+.slick-dots li button::before {
+  color: #dbdbdb !important; 
+}
+
+/* Color on hover */
+.slick-dots li button:hover::before {
+  color: #0069AB !important; 
+}
+
+/* Active dot color */
+.slick-dots li.slick-active button::before {
+  color: #0069AB !important; 
+}
+
 @media all and (max-width:768px){
     .icon-one-hero{
         left: -4% !important;
