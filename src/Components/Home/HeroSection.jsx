@@ -63,7 +63,7 @@ const HeroSection = () => {
 
         <div className="relative mt-8 lg:mt-0">
           <div className="relative">
-            <Image src={doctorImage} alt="Doctor" className="lg:w-full" />
+            <Image src={doctorImage} alt="Doctor" className="w-[500px]" />
           </div>
 
           <div
@@ -73,7 +73,7 @@ const HeroSection = () => {
             <Image
               src={iconImage1}
               alt="Icon 1"
-              className="w-full h-full rounded-full z-10"
+              className=" rounded-full z-10"
             />
           </div>
           <div

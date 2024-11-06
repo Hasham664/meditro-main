@@ -20,7 +20,7 @@ const services = [
   return (
     <div className="bg-[#4CB6B60D] lg:mt-24 md:mt-24 mt-12 pb-12">
       <section className="Mycontainer">
-        <h2 className="text-center text-4xl font-semibold text-teal-600 mb-8 pt-24 pb-12">
+        <h2 className="text-center text-4xl font-semibold text-teal-600 mb-8 lg:pt-24 pt-12 pb-12">
           Our Services
         </h2>
 
