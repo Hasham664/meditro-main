@@ -3,14 +3,16 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
-
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
+    const pathname = usePathname();
+
 
   return (
     <nav className="text-black  ">
@@ -31,31 +33,41 @@ export default function Navbar() {
           <div className="hidden tablet:flex lg:space-x-8 md:space-x-4">
             <Link
               href="/"
-              className="lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6]"
+              className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${
+                pathname === "/" ? " text-[#4CB6B6]" : ""
+              }`}
             >
               Home
             </Link>
             <Link
               href="/service"
-              className=" lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6]"
+              className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${
+                pathname === "/service" ? " text-[#4CB6B6]" : ""
+              }`}
             >
               Service
             </Link>
             <Link
               href="/Hospitality "
-              className="lg:text-xl md:text-l text-[#3D3D3D]g hover:text-[#4CB6B6]"
+              className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${
+                pathname === "/Hospitality" ? " text-[#4CB6B6]" : ""
+              }`}
             >
               Hospitality
             </Link>
             <Link
               href="/Travel"
-              className="lg:text-xl md:text-l text-[#3D3D3D]g hover:text-[#4CB6B6]"
+              className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${
+                pathname === "/Travel" ? " text-[#4CB6B6]" : ""
+              }`}
             >
               Travel 
             </Link>
             <Link
               href="/hospital"
-              className="lg:text-xl md:text-l text-[#3D3D3D]g hover:text-[#4CB6B6]"
+              className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${
+                pathname === "/hospital" ? " text-[#4CB6B6]" : ""
+              }`}
             >
               Hospitals
             </Link>
