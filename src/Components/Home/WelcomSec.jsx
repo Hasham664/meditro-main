@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./Custom.css";
-//
+////
 export default function WelcomSec() {
   return (
     <>
