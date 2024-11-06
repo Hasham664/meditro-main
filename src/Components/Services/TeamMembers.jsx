@@ -42,19 +42,27 @@ const TeamSlider = () => {
       name: "Doctor’s Name",
       specialty: "NEUROLOGY",
       imgSrc: docs_1,
-      icons: [<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />],
+      icons: [
+        <LiaInstagram key="insta" />,
+        <FaFacebookF key="facebook" />,
+        <LiaLinkedinIn key="linkedin" />,
+      ],
     },
     {
       name: "Doctor’s Name",
       specialty: "NEUROLOGY",
       imgSrc: docs_2,
-      icons: [<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />],
+      icons: [
+        <LiaInstagram key="insta" />,
+        <FaFacebookF key="facebook" />,
+        <LiaLinkedinIn key="linkedin" />,
+      ],
     },
     {
       name: "Doctor’s Name",
       specialty: "NEUROLOGY",
       imgSrc: docs_3,
-      icons: [<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />],
+      icons:[<LiaInstagram key="insta" />, <FaFacebookF key="facebook" />, <LiaLinkedinIn key="linkedin" />],
     },
   ];
 
