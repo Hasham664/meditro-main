@@ -89,7 +89,7 @@ const TeamSlider = () => {
                 {member.icons.map((IconComponent, iconIndex) => (
                   <div
                     key={iconIndex}
-                    className="bg-[#0069AB]  rounded-full px-3 py-2 mt-3"
+                    className="bg-[#0069AB]  rounded-full px-3 py-3 mt-3"
                   >
                     <span className="text-xl text-white">{IconComponent}</span>
                   </div>
