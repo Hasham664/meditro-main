@@ -13,14 +13,12 @@ const services = [
   },
   {
     icon: plus,
-
     title: "Restorative Treatments",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.",
     link: "/ServiceDetail",
   },
   {
     icon: plus,
-
     title: "Root Canal Treatments",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.",
     link: "/ServiceDetail",

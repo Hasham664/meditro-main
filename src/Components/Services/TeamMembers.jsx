@@ -42,19 +42,19 @@ const TeamSlider = () => {
       name: "Doctor’s Name",
       specialty: "NEUROLOGY",
       imgSrc: docs_1,
-      icons: (<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />),
+      icons: [<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />],
     },
     {
       name: "Doctor’s Name",
       specialty: "NEUROLOGY",
       imgSrc: docs_2,
-      icons: (<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />),
+      icons: [<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />],
     },
     {
       name: "Doctor’s Name",
       specialty: "NEUROLOGY",
       imgSrc: docs_3,
-      icons: (< LiaInstagram />, < FaFacebookF />, <LiaLinkedinIn />),
+      icons: [<LiaInstagram />, <FaFacebookF />, <LiaLinkedinIn />],
     },
   ];
 
@@ -81,7 +81,7 @@ const TeamSlider = () => {
                 {member.icons.map((IconComponent, iconIndex) => (
                   <div
                     key={iconIndex}
-                    className="bg-[#0069AB]  rounded-full px-2 py-2 mt-3"
+                    className="bg-[#0069AB]  rounded-full px-3 py-2 mt-3"
                   >
                     <span className="text-xl text-white">{IconComponent}</span>
                   </div>
