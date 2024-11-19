@@ -8,11 +8,56 @@ import { FaBars, FaTimes } from "react-icons/fa";
 // function
 export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
+   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+    const handleMouseEnter = () => setIsSubmenuOpen(true);
+    const handleMouseLeave = () => setIsSubmenuOpen(false);
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
     const pathname = usePathname();
 
+  const serviceLinks = [
+    {
+      name: "Neurology",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Bones",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Oncology",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Otorhino laryngology",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Ophthalmology",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Cardiovascular",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Pulmonology",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Renal Medicine",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Gastroenterology",
+      href: "/ServiceDetail",
+    },
+    {
+      name: "Urology",
+      href: "/ServiceDetail",
+    },
+  ];
 
   return (
     <nav className="text-black  ">
@@ -39,14 +84,33 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link
-              href="/service"
-              className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${
-                pathname === "/service" ? " text-[#4CB6B6]" : ""
-              }`}
+            <div
+              className="relative"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
-              Service
-            </Link>
+              <Link
+                href="/service"
+                className="lg:text-xl md:text-lg text-[#3D3D3D] hover:text-[#4CB6B6]"
+              >
+                Service
+              </Link>
+
+              {/* Dropdown Menu */}
+              {isSubmenuOpen && (
+                <div className="absolute top-full left-0   bg-white shadow-lg border rounded-md z-10">
+                  {serviceLinks.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.href}
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <Link
               href="/Hospitality "
               className={`lg:text-xl md:text-lg text-[#3D3D3D]  hover:text-[#4CB6B6] ${

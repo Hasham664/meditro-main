@@ -12,7 +12,7 @@ import { useState } from "react";
 export default function OurService() {
     const [activeTab, setActiveTab] = useState(0);
 const services = [
-  { name: "Consultations", icon: medical },
+  { name: "Consulta tions", icon: medical },
   { name: "Travel", icon: "heart2" },
   { name: "Treatment", icon: medical_plus },
   { name: "Post Care Support", icon: suppor },
@@ -25,14 +25,13 @@ const services = [
         </h2>
 
         <div className="flex flex-col lg:flex-row items-start ">
-          {/* Sidebar with Services */}
           <div className=" text-center">
             <div className=" justify-center flex flex-row flex-wrap gap-4 lg:gap-0 md:gap-4 lg:flex-col  ">
               {services.map((service, index) => (
                 <div
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  className={`flex flex-col items-center p-6 rounded-sm cursor-pointer transition duration-200 mb-4 ${
+                  className={`flex flex-col items-center p-4 lg:p-6 md:p-6 rounded-sm cursor-pointer transition duration-200 mb-4 ${
                     activeTab === index
                       ? "bg-[#0069AB] text-white"
                       : "text-black hover:bg-[#0069AB] hover:text-white"

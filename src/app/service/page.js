@@ -5,6 +5,7 @@ import ServiceSection from "@/Components/Details/ServiceSection";
 import ServiceCards from "@/Components/Details/serviceCards";
 import Contactus from "@/Components/Home/Contactus";
 import Navbar from "@/Components/Home/Navbar";
+import OurSpecialties from "@/Components/Home/OurSpecialties";
 import TeamSlider from "@/Components/Services/TeamMembers";
 
 import React from "react";
@@ -18,7 +19,8 @@ export default function Service() {
           Service
         </h1>
       </div>
-      <ServiceSection />
+      <OurSpecialties/>
+      {/* <ServiceSection /> */}
       <ServiceCards />
       <div className="mt-12 w-[97%] lg:w-[100%] md:w-[100%]">
         <TeamSlider />
